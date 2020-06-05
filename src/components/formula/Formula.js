@@ -14,10 +14,9 @@ export class Formula extends ExcelComponent {
         <div class="input" contenteditable spellcheck="false"></div>`
     }
     onInput(event) {
-        this
-        console.log('Formula: onInput', event.target.textContent.trim())
+        console.log('Formula: onInput', event.target.textContent.trim());
     }
     onClick() {
-        console.log('mk')
+        console.log('mk');
     }
 }
