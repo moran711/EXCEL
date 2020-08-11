@@ -10,10 +10,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const isProd = process.env.NODE_ENV === 'production';
 const isDev = !isProd;
 
-console.log('is Prod', isProd)
-console.log('isDev', isDev)
+console.log('is Prod', isProd);
+console.log('isDev', isDev);
 
-const filename = ext => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`
+const filename = ext => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`;
 
 const jsLoaders = () => {
     const loaders = [{
@@ -22,13 +22,13 @@ const jsLoaders = () => {
             presets: ['@babel/preset-env'],
             plugins: ['@babel/plugin-proposal-class-properties']
         }}
-    ]
+    ];
 
     if (isDev) {
-        loaders.push('eslint-loader')
+        loaders.push('eslint-loader');
     }
-    return loaders
-}
+    return loaders;
+};
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
@@ -90,4 +90,4 @@ module.exports = {
             }
         ],
     }
-}
+};

@@ -6,12 +6,13 @@
         "node": true
     },
     "rules": {
-        "semi":"off",
         "arrow-parens": "off",
         "comma-dangle": "off",
         "require-jsdoc": "off",
         "linebreak-style":"off",
-        "indent": "off"
+        "indent": "off",
+        "operator-linebreak": "off",
+        "no-case-declarations": "off"
     }
     ,
      "extends": ["eslint:recommended", "google"]
